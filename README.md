@@ -1,10 +1,10 @@
 # AI_Tech
 ## Algorithm
 - 주차별 문제 내용 README.md에 각 주차 모더레이터가 기록
-    - 레퍼런스 : Week2 디렉토리 README.md 참조
+    - 레퍼런스 : Week2/Num 1   디렉토리 README.md 참조
     ### 문제풀이 올릴 경우
     - LocalRepo로 Clone 후에, 자신 이름 브랜치 생성
-        - 각 주차에 해당하는 문제 파일명 통일 -> ex)`Week2/Yungi_1.py`, `Week2/Yungi_2.py` ...
+        - 각 주차에 해당하는 문제 파일명 통일 -> ex)`Week2/Num 1/Yungi.py`, `Week3/Num 4/Yungi.py` ...
         - LocalRepo에 문제풀이 코드 commit 및 push 후에, 자신의 RemoteRepo에 올라간 브랜치를, Remote `main` Repo로 PULL REQUEST 요청, Reviewers에 모든 팀원들 등록
         - PR명은 __'[이름] n번 문제 풀이'__ 로 통일
         - PR내용은 자유롭게 어려웠던 점, 공부해볼 점 작성
