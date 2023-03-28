@@ -43,7 +43,7 @@ def prog_problem_parser(url):
 
 if __name__ == "__main__":
     conf = configparser.ConfigParser()
-    conf.read("./Utils/problem_URL.conf", encoding='utf-8')
+    conf.read("./Algorithm/Utils/problem_URL.conf", encoding='utf-8')
 
     week_num = conf['Url']['week']
     boj_prob = json.JSONDecoder().decode(conf['Url']['boj'])
@@ -53,8 +53,8 @@ if __name__ == "__main__":
 
     for i, problem_url in problem_dict.items():
         if problem_url.find('acmicpc') != -1:
-            with open(os.path.join("./", week_num, f"Num {i}", "README.md"), mode="w", encoding="utf8") as f:
+            with open(os.path.join("./","Algorithm", week_num, f"Num {i}", "README.md"), mode="w", encoding="utf8") as f:
                 f.write(boj_problem_parser(problem_url))
         elif problem_url.find('programmers') != -1:
-            with open(os.path.join("./", week_num, f"Num {i}", "README.md"), mode="w", encoding="utf8") as f:
+            with open(os.path.join("./","Algorithm", week_num, f"Num {i}", "README.md"), mode="w", encoding="utf8") as f:
                 f.write(prog_problem_parser(problem_url))
