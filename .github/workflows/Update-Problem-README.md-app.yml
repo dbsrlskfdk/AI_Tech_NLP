@@ -35,4 +35,4 @@ jobs:
         git config --local user.email "dbsrlskfdk@naver.com"
         git config --local user.name "Yungi"
         git commit -m ":smiley: Update Problem Description README.md file"
-        git push
+        git push -f
