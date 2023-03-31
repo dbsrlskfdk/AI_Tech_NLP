@@ -34,3 +34,4 @@ else :
 #이중리스트 형식으로 food1에 대한 거리, food2에 대한 거리를 1번만 계산 후
 #zip과 언팩 써서 home1과 food1, food2 에 대한 거리 중 min을
 #combinations(foods, M)으로 하면 계산 간단화 가능
+#t1
