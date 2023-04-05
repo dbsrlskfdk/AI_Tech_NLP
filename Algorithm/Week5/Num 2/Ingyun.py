@@ -1,12 +1,12 @@
 import re
 
 def do_func(url):
-    temp = re.split(r'://', url)
+    temp = re.split(r'://', url, 1)
     Protocol = temp[0]
     url = temp[1]
     print('Protocol', '=', Protocol)
 
-    temp = re.split(r':', url)
+    temp = re.split(r':', url, 1)
     if temp[0] == url or '/' in temp[0]:
         # no Port
         temp = re.split(r'/', url, 1)
