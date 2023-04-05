@@ -4,7 +4,6 @@ def do_func(url):
     temp = re.split(r'://', url, 1)
     Protocol = temp[0]
     url = temp[1]
-    print('Protocol', '=', Protocol)
 
     temp = re.split(r':', url, 1)
     if temp[0] == url or '/' in temp[0]:
@@ -15,33 +14,38 @@ def do_func(url):
             Host = temp[0]
             Port = '<default>'
             Path = '<default>'
-            print('Host', '\t', '=', Host)
-            print('Port', '\t', '=', Port)
-            print('Path', '\t', '=', Path)
+            print('Protocol =', Protocol)
+            print("Host     =", Host)
+            print("Port     =", Port)
+            print("Path     =", Path)
             return '_'
         Host = temp[0]
         Port = '<default>'
         Path = temp[1]
-        print('Host', '\t', '=', Host)
-        print('Port', '\t', '=', Port)
-        print('Path', '\t', '=', Path)
+        print('Protocol =', Protocol)
+        print("Host     =", Host)
+        print("Port     =", Port)
+        print("Path     =", Path)
         return '_'
     Host = temp[0]
     url = temp[1]
-    print('Host', '\t', '=', Host)
 
     temp = re.split(r'/', url, 1)
     if temp[0] == url:
         # no path
         Port = temp[0]
         Path = '<default>'
-        print('Port', '\t', '=', Port)
-        print('Path', '\t', '=', Path)
+        print('Protocol =', Protocol)
+        print("Host     =", Host)
+        print("Port     =", Port)
+        print("Path     =", Path)
         return '_'
     Port = temp[0]
     Path = temp[1]
-    print('Port', '\t', '=', Port)
-    print('Path', '\t', '=', Path)
+    print('Protocol =', Protocol)
+    print("Host     =", Host)
+    print("Port     =", Port)
+    print("Path     =", Path)
     return '_'
 
 num = int(input())
