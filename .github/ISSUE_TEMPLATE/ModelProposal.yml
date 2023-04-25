@@ -14,6 +14,8 @@ body:
     label: 개선 제안 사항
     description: >
       개선 하기 위한 모델 변경 제안 사항에 대해서 자세히 서술해주세요! 왜 제안 하시는지도 자세히 서술해주세요!
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: 성능 개선 기대점
