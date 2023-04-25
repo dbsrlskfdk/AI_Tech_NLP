@@ -1,25 +1,25 @@
-name: 🚀 Feature request
-description: Submit a proposal/request for a new PyTorch feature
+name: 모델 변경 제안
+description: 모델 변경 제안점에 대해서 자세히 설명해주세요.
 
 body:
 - type: textarea
   attributes:
-    label: 🚀 The feature, motivation and pitch
+    label: 현재 상황과 문제점
     description: >
-      A clear and concise description of the feature proposal. Please outline the motivation for the proposal. Is your feature request related to a specific problem? e.g., *"I'm working on X and would like Y to be possible"*. If this is related to another GitHub issue, please link here too.
+      현재 상황과 문제점에 대해서 간략히 서술해주세요. Metric 또는 성능! 
   validations:
     required: true
 - type: textarea
   attributes:
-    label: Alternatives
+    label: 개선 제안 사항
     description: >
-      A description of any alternative solutions or features you've considered, if any.
+      개선 하기 위한 모델 변경 제안 사항에 대해서 자세히 서술해주세요! 왜 제안 하시는지도 자세히 서술해주세요!
 - type: textarea
   attributes:
-    label: Additional context
+    label: 성능 개선 기대점
     description: >
-      Add any other context or screenshots about the feature request.
+      모델 변경 시, 성능이 개선될 것으로 예상되는 점을 서술해주세요!
 - type: markdown
   attributes:
     value: >
-      Thanks for contributing 🎉!
+      수고하셨습니다!
