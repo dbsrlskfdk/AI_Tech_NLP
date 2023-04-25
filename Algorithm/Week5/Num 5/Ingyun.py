@@ -6,3 +6,5 @@ for _ in range(T):
     new = re.sub('^[ABCDEF]?A+F+C+[ABCDEF]?$', 'Infected!', string)
     
     print(new) if new == 'Infected!' else print('Good')
+
+# test
