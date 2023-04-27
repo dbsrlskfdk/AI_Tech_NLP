@@ -4,8 +4,16 @@ import torch
 import transformers
 from sklearn.model_selection import KFold
 
-
 class Dataloader(pl.LightningDataModule):
+    '''
+    데이터로더입니다.
+
+    Methods:
+        __init__: pass
+        setup: pass
+        prepare_data: We don't have this method.
+        {train, val, test, predict}_dataloader: pass
+    '''
     def __init__(self, model_name, batch_size, shuffle,
                  train_path, dev_path, test_path, predict_path,
                  k_fold=True, num_split=10, k=1, seed=11,):

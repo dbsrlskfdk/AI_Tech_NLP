@@ -2,6 +2,15 @@ import torch
 
 
 class Dataset(torch.utils.data.Dataset):
+    '''
+    이것은 데이터셋입니다.
+    
+    Methods:
+        __init__: pass
+        __getitem__: pass
+        __len__: pass
+        
+    '''
     def __init__(self, inputs, targets=[]):
         self.inputs = inputs
         self.targets = targets
